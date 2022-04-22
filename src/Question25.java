@@ -1,5 +1,6 @@
 import java.math.*;
 import java.util.*;
+import java.util.stream.Collectors;
 enum Speciality{
 	ENGINEER,MANAGER,DEVOPS
 }
@@ -83,6 +84,9 @@ public class Question25 {
 		Implementation8 ob=new Implementation8();
 		System.out.println(ob.filterBySpecialty(list,Speciality.ENGINEER));
 		System.out.println(ob.sortSpecialistsByNameAsc(list));
-
+		//to sort ele using stream api
+		list.stream().sorted(Comparator.comparing(Specialist1::getName));
+		System.out.println(list);
+		
 	}
 }

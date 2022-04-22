@@ -8,5 +8,6 @@ public class Question38 {
 		String n[]=s.split(" ");
 		System.out.println(n.length);
 		
+		
 	}
 }
