@@ -39,6 +39,7 @@ class DishTest
 	Long count(List<Dish>list,String s)
 	{
 		long count=0;
+		char ch=s.charAt(0);
 		for(int i=0;i<list.size();i++)
 		{
 			if(list.get(i).getDishName().startsWith(s))
@@ -55,6 +56,7 @@ public class Question53 {
 		  list.add(new Dish("Jamon"));
 		  list.add(new Dish("Tortilla"));
 		  list.add(new Dish("Churros"));
+//		  list.add(new Dish("Samosa"));
 		  System.out.println(dt.addYummyToName(list));
 		  System.out.println(dt.count(list, "S"));
 	}
