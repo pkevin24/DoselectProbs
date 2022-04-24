@@ -13,13 +13,14 @@ class Validator1{
 //		int n=s.length;
 		for(int i=0;i<4;i++)
 		{	
-			count+=comment.split(a.get(i)).length-1;
+			if(comment.split(a.get(i)).length>1)
+				count+=1;
 		}
 		if(count==1)
 		{
 			throw new SpamCommentException("spam comment");
 		}
-		else if(count>2)
+		else if(count>=2)
 			throw new SpamCommentException("account ban due to spam comment");
 		return "comment is not spam";
 	}
@@ -51,7 +52,7 @@ public class Question5 {
 	public static void main(String[] args) throws SpamCommentException {
 		Validator1 obj = new Validator1();
 //		-------------------------------------------
-		String s1=obj.checkComment("hello my name is steve");
+		String s1=obj.checkComment("hello my name is steve and using abcde lmno pqrst");
 		String s2=obj.commentTheString("my comment is safe to post");
 		System.out.println(s1);
 		System.out.println(s2);
