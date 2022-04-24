@@ -56,6 +56,5 @@ public class Question5 {
 		String s2=obj.commentTheString("my comment is safe to post");
 		System.out.println(s1);
 		System.out.println(s2);
-
 }
 }
