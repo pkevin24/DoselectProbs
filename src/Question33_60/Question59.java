@@ -117,7 +117,17 @@ public class Question59 {
 		Company c1=new Company("Doselect","CSE",23,false);
 		Recruitment rec=new Recruitment();
 		System.out.println(rec.addCompany(c1));
+		String name="java";
+		int sum=0;
+		for(int i=0;i<name.length();i++)
+		{
+			sum+=(name.charAt(i)-96);
+		}
+		sum=sum%26;
+		char c=(char) (sum+96);
+		System.out.println(c);
 		
+				
 
 	}
 }
