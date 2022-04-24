@@ -13,7 +13,7 @@ class Validator1{
 //		int n=s.length;
 		for(int i=0;i<4;i++)
 		{	
-			if(comment.split(a.get(i)).length>1)
+			if(comment.split(a.get(i)).length>1 || comment.contains(a.get(i)))
 				count+=1;
 		}
 		if(count==1)
@@ -52,7 +52,7 @@ public class Question5 {
 	public static void main(String[] args) throws SpamCommentException {
 		Validator1 obj = new Validator1();
 //		-------------------------------------------
-		String s1=obj.checkComment("hello my name is steve and using abcde lmno pqrst");
+		String s1=obj.checkComment("hello my name is steve and using");
 		String s2=obj.commentTheString("my comment is safe to post");
 		System.out.println(s1);
 		System.out.println(s2);
