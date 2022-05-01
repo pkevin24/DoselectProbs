@@ -46,6 +46,5 @@ public class Prob20 {
 		System.out.println(obj.newEntry(s1,"IIT BOMBAY"));
 		System.out.println(obj.newEntry(s2,"IIT BOMBAY"));
 		System.out.println(obj.getStudents("IIT BOMBAY"));
-
 	}
 }
